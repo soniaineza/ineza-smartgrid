@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 
@@ -22,9 +23,17 @@ export default function Reveal({
   className,
   once = true,
 }: RevealProps) {
-  const reduce = useReducedMotion();
+  /* Always start with motion (non-reduced) so server + client match,
+     then switch after hydration if the user prefers reduced motion. */
+  const reduced = useReducedMotion();
+  const [reduce, setReduce] = useState(false);
+  useEffect(() => {
+    if (reduced) setReduce(true);
+  }, [reduced]);
+
   return (
     <motion.div
+      suppressHydrationWarning
       className={className}
       initial={{ opacity: 0, y: reduce ? 0 : y }}
       whileInView={{ opacity: 1, y: 0 }}

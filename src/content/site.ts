@@ -16,8 +16,9 @@ export const site = {
   description:
     "Ineza SmartGrid is a software engineering company in Kigali, Rwanda. We design and build production systems — web and mobile platforms, APIs, data infrastructure, cloud environments, and AI-powered software — for businesses, institutions, and startups that need technology to actually work.",
   email: "hello@inezasmartgrid.com",
-  phone: "+250 700 000 000",
-  address: "Kigali, Rwanda",
+  phone: "+250 794 715 042",
+  whatsapp: "+250794715042",
+  address: "Norskeen, Kigali",
   responseTime: "An engineer responds within 24 hours.",
   socials: [
     {
@@ -46,7 +47,6 @@ export const site = {
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
   { label: "Why Ineza", href: "#why-us" },
   { label: "Tech Stack", href: "#stack" },
   { label: "Contact", href: "#contact" },
@@ -132,61 +132,6 @@ export const consulting = {
     "We review your architecture, code, and infrastructure — then tell you what needs to change before it fails in production. Audits, roadmaps, and senior engineers embedded in your team when you need depth on demand.",
   features: ["Technical audits & architecture review", "System roadmaps & modernization", "Senior engineers on demand"],
 };
-
-export const projects = [
-  {
-    name: "GridOps",
-    category: "Energy analytics platform",
-    description:
-      "Real-time monitoring and analytics for energy utilities — live dashboards, anomaly detection, and load forecasting over high-volume meter telemetry.",
-    problem: "Operators were making decisions from hourly spreadsheets while faults unfolded in minutes.",
-    challenge:
-      "Ingesting time-series telemetry from thousands of meters at sub-minute latency, with anomaly detection that does not drown the control room in false alarms.",
-    impact: "Operators now respond to events in minutes, and load forecasting cut reported energy losses by 9% within two quarters.",
-    technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "InfluxDB"],
-    accent: "emerald",
-    mock: "analytics",
-  },
-  {
-    name: "PayBridge",
-    category: "Mobile payment wallet",
-    description:
-      "A mobile wallet for payments, bill settlement, and transfers — built for financial institutions where every movement of funds must reconcile exactly.",
-    problem: "Cash-based payments were slow, unrecorded, and expensive to reconcile for merchants and their customers.",
-    challenge:
-      "Keeping transaction state consistent across the wallet, provider rails, and offline fallbacks — with double-entry accounting on every transfer.",
-    impact: "Settlement is automatic, and every transaction reconciles against provider records without manual work.",
-    technologies: ["Flutter", "Node.js", "MongoDB", "AES-256"],
-    accent: "violet",
-    mock: "wallet",
-  },
-  {
-    name: "CareLink",
-    category: "Telehealth platform",
-    description:
-      "A telehealth system connecting patients with clinicians — video consultations, e-prescriptions, and structured patient records in one platform.",
-    problem: "Patients in remote areas traveled for hours to reach a doctor for consultations that could happen over video.",
-    challenge:
-      "Low-bandwidth video streaming, end-to-end encryption of health data, and records that stay consistent across devices and clinics.",
-    impact: "Consultations that used to take a day now take minutes; clinics report a 40% drop in no-show appointments.",
-    technologies: ["Next.js", "React Native", "WebRTC", "MySQL"],
-    accent: "sky",
-    mock: "telehealth",
-  },
-  {
-    name: "LogiTrack",
-    category: "Fleet intelligence",
-    description:
-      "An IoT platform that tracks fleets in real time — route optimization, fuel analytics, and driver behavior scoring over live telemetry.",
-    problem: "Fleet managers tracked vehicles with phone calls and paper logs, with no visibility into routes, fuel use, or driving behavior.",
-    challenge:
-      "Collecting and processing GPS and sensor telemetry from hundreds of devices over unreliable mobile networks, then serving live maps from that data.",
-    impact: "Fuel consumption fell by 12% across client fleets within the first three months of rollout.",
-    technologies: ["React", "Python", "FastAPI", "MongoDB", "MQTT"],
-    accent: "amber",
-    mock: "fleet",
-  },
-];
 
 export const whyChooseUs = {
   eyebrow: "Why Ineza",

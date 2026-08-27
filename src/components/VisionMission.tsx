@@ -32,7 +32,6 @@ export default function VisionMission() {
               <blockquote className="mt-4 flex-1 text-base leading-relaxed text-slate-600">
                 "{visionMission.vision.text}"
               </blockquote>
-              <div className="divider-glow mt-8 opacity-60" aria-hidden="true" />
               <figcaption className="mt-5 text-xs font-medium uppercase tracking-widest text-slate-500">
                 Where we are going
               </figcaption>
@@ -50,7 +49,6 @@ export default function VisionMission() {
               <blockquote className="mt-4 flex-1 text-base leading-relaxed text-slate-600">
                 "{visionMission.mission.text}"
               </blockquote>
-              <div className="divider-glow mt-8 opacity-60" aria-hidden="true" />
               <figcaption className="mt-5 text-xs font-medium uppercase tracking-widest text-slate-500">
                 How we get there
               </figcaption>

@@ -26,7 +26,7 @@ export default function About() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="grid items-center gap-16 lg:grid-cols-2">
+        <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
           {/* Copy */}
           <div>
             <SectionHeading
@@ -61,10 +61,25 @@ export default function About() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </Reveal>
+
+            {/* CEO & Founder — prominent card at the bottom of copy */}
+            <Reveal delay={0.35}>
+              <div className="mt-10 flex items-center gap-5 rounded-2xl border border-slate-200 bg-white p-4 pr-8 shadow-sm">
+                <img
+                  src="/passport.png"
+                  alt="CEO & Founder of Ineza SmartGrid"
+                  className="h-24 w-24 shrink-0 rounded-xl object-cover object-top ring-2 ring-blue-100 shadow-md"
+                />
+                <div>
+                  <p className="text-sm font-semibold text-slate-900">CEO & Founder</p>
+                  <p className="mt-0.5 text-xs text-slate-500">Ineza SmartGrid</p>
+                </div>
+              </div>
+            </Reveal>
           </div>
 
           {/* Terminal visual */}
-          <Reveal delay={0.15} className="relative">
+          <Reveal delay={0.15} className="relative hidden lg:block">
             <div
               className="absolute -inset-10 rounded-[2.5rem] bg-gradient-to-br from-cyan-500/15 via-transparent to-indigo-500/15 blur-3xl"
               aria-hidden="true"

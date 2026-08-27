@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, MapPin, Phone, Twitter, MessageCircle } from "lucide-react";
 import { navLinks, services, site } from "@/content/site";
 import Logo from "@/components/Logo";
 
@@ -14,8 +14,6 @@ export default function Footer() {
 
   return (
     <footer className="relative border-t border-slate-200 bg-white">
-      <div className="divider-glow absolute inset-x-0 top-0" aria-hidden="true" />
-
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           {/* Brand */}
@@ -97,6 +95,17 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />
                 <span>{site.phone}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+                <a
+                  href={`https://wa.me/${site.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-emerald-600"
+                >
+                  WhatsApp
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />

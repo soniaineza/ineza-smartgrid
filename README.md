@@ -1,42 +1,42 @@
-# Ineza SmartGrid Website
+# 🚀 Welcome to the Future of Smart Digital Solutions
 
 ![Ineza SmartGrid Logo](./public/logo.png)
 
-## 🚀 About Ineza SmartGrid
+## About Ineza SmartGrid
 
-**Ineza SmartGrid** is a technology company focused on developing innovative digital solutions that connect people, businesses, and communities through smart software systems.
+**Ineza SmartGrid** is a forward-thinking technology company committed to creating innovative digital solutions that connect people, businesses, and communities through smart software systems.
 
-We build scalable and reliable technology solutions including web applications, mobile platforms, intelligent systems, and custom software designed to solve real-world challenges.
+We excel in developing scalable, reliable, and impactful technology solutions, including web and mobile apps, intelligent systems, and custom software designed to tackle real-world challenges.
 
-Our goal is to use technology, creativity, and engineering to create a smarter and more connected future.
-
----
-
-## 🌍 Vision
-
-To become a leading technology company creating smart digital solutions that transform businesses and communities.
-
-## 🎯 Mission
-
-To design and deliver secure, efficient, and user-focused software solutions that improve accessibility, productivity, and innovation.
+Our goal is to leverage technology, creativity, and engineering expertise to build a smarter, more connected world.
 
 ---
 
-## 💡 Services
+## Our Vision
 
-Ineza SmartGrid provides:
+To be a global leader in delivering smart digital solutions that transform industries and empower communities.
+
+## Our Mission
+
+To provide secure, efficient, and user-friendly software solutions that improve accessibility, increase productivity, and foster innovation.
+
+---
+
+## What We Do
+
+At Ineza SmartGrid, we offer:
 
 * 💻 Custom Software Development
 * 🌐 Web Application Development
 * 📱 Mobile Application Development
-* ☁️ Cloud & Digital Solutions
+* ☁️ Cloud & Digital Transformation
 * 🗄️ Database Design & Management
-* 🤖 AI and Smart Technology Solutions
-* 🔧 IT Consulting and System Development
+* 🤖 AI & Smart Technology Integration
+* 🔧 IT Consulting & System Architecture
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend
 
@@ -44,16 +44,14 @@ Ineza SmartGrid provides:
 * Next.js
 * Vue.js
 * Tailwind CSS
-* HTML5
-* CSS3
-* JavaScript / TypeScript
+* HTML5 | CSS3 | JavaScript / TypeScript
 
 ### Backend
 
 * Node.js
 * Laravel (PHP)
 * Python
-* REST APIs
+* RESTful APIs
 
 ### Databases
 
@@ -73,40 +71,39 @@ Ineza SmartGrid provides:
 
 ---
 
-## 📂 Featured Projects
+## Featured Projects
 
 ### 🔹 Sheja Cards
 
-A digital student identification and management platform designed to simplify identity verification and student services.
+A digital platform that simplifies student identification and management, making verification and services easier.
 
 ### 🔹 Kora
 
-A driving theory learning platform that helps users prepare for driving exams through interactive digital learning.
+An engaging driving theory learning platform to help users prepare for their driving exams.
 
 ### 🔹 INKINGI Rescue
 
-An emergency response platform designed to improve access to help through location-based technology and digital communication.
+An emergency response system that uses location-based technology for faster assistance.
 
 ### 🔹 MindBridge
 
-A digital platform focused on supporting mental wellness through accessible technology solutions.
+A mental wellness platform that offers accessible support through innovative tech.
 
 ---
 
-## ✨ Website Features
+## Website Highlights
 
-* Modern responsive design
-* Company profile presentation
-* Services showcase
-* Project portfolio
-* Contact system
-* SEO optimized pages
+* Modern, responsive design
+* Company profile showcase
+* Service and project portfolios
+* Easy-to-use contact system
+* SEO-optimized pages
 * Mobile-friendly interface
-* Modern animations and interactions
+* Interactive animations and effects
 
 ---
 
-## 📦 Installation & Setup
+## Setup & Installation
 
 Clone the repository:
 
@@ -114,7 +111,7 @@ Clone the repository:
 git clone https://github.com/yourusername/ineza-smartgrid.git
 ```
 
-Navigate into the project:
+Navigate into the project folder:
 
 ```bash
 cd ineza-smartgrid
@@ -126,13 +123,13 @@ Install dependencies:
 npm install
 ```
 
-Run the development server:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-The application will run locally at:
+Visit the app at:
 
 ```
 http://localhost:3000
@@ -140,35 +137,30 @@ http://localhost:3000
 
 ---
 
-## 🔐 Environment Variables
+## Environment Setup
 
-Copy `.env.example` to `.env.local` and fill in the values:
-
-```bash
-cp .env.example .env.local
-```
+Copy `.env.example` to `.env.local` and fill in your credentials:
 
 ```env
-# Resend — transactional email used by the contact form
-RESEND_API_KEY=re_xxxxxxxxxxxxxxxx
+RESEND_API_KEY=your-resend-api-key
 RESEND_EMAIL_FROM=Ineza SmartGrid <hello@inezasmartgrid.com>
-CONTACT_EMAIL_TO=hello@inezasmartgrid.com
+CONTACT_EMAIL_TO=your-contact-email@example.com
 ```
 
-### Setting up email delivery (Resend)
+### Email Configuration (Resend)
 
-1. Create a free account at [resend.com](https://resend.com) (free tier includes 3,000 emails/month).
-2. Generate an API key at [resend.com/api-keys](https://resend.com/api-keys) and set it as `RESEND_API_KEY`.
-3. Verify your sending domain so emails appear from your own address (`RESEND_EMAIL_FROM`). Until then, Resend only allows sending from `onboarding@resend.dev`.
-4. `CONTACT_EMAIL_TO` is the inbox that receives submissions — leave it empty to default to the address in `src/content/site.ts`.
+1. Sign up at [resend.com](https://resend.com)
+2. Generate your API key
+3. Verify your domain
+4. Set your contact email
 
-The contact form posts to `/api/contact`, which validates the input, rate-limits submissions, and delivers the message via Resend.
+Your contact form will send messages securely through Resend.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-Add website screenshots here:
+Add your website screenshots here:
 
 ```
 /screenshots
@@ -176,34 +168,25 @@ Add website screenshots here:
 
 ---
 
-## 🤝 Contribution
+## Join Our Community
 
-We welcome collaboration and partnerships.
+We’re open to collaborations, partnerships, and new ideas.
 
-If you are interested in working with Ineza SmartGrid, building innovative solutions, or partnering on technology projects, feel free to contact us.
+Interested in working with us? Reach out!
 
 ---
 
-## 📞 Contact
+## Contact
 
 **Ineza SmartGrid**
 
-Building smart digital solutions for a connected future.
+Building a smarter, connected future.
 
-Website:
-
-```
-https://inezasmartgrid.com
-```
-
-Email:
-
-```
-contact@inezasmartgrid.com
-```
+Website: [https://inezasmartgrid.com](https://inezasmartgrid.com)
+Email: contact@inezasmartgrid.com
 
 ---
 
-## 📄 License
+## License
 
 © 2026 Ineza SmartGrid. All rights reserved.

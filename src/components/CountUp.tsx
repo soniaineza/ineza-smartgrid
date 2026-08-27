@@ -18,8 +18,13 @@ export default function CountUp({
 }: CountUpProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
-  const reduce = useReducedMotion();
+  const reduced = useReducedMotion();
+  const [reduce, setReduce] = useState(false);
   const [display, setDisplay] = useState(0);
+
+  useEffect(() => {
+    if (reduced) setReduce(true);
+  }, [reduced]);
 
   useEffect(() => {
     if (!inView) return;

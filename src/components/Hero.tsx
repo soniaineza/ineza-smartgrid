@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import {
@@ -105,7 +106,11 @@ function OrbitalHub() {
 }
 
 export default function Hero() {
-  const reduce = useReducedMotion();
+  const reduced = useReducedMotion();
+  const [reduce, setReduce] = useState(false);
+  useEffect(() => {
+    if (reduced) setReduce(true);
+  }, [reduced]);
 
   const container: Variants = {
     hidden: {},
@@ -132,7 +137,7 @@ export default function Hero() {
       <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-36 sm:px-8 lg:pt-44 lg:pb-32">
         <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
           {/* ---------- Copy ---------- */}
-          <motion.div variants={container} initial="hidden" animate="show" className="max-w-2xl">
+          <motion.div variants={container} initial="hidden" animate="show" className="max-w-2xl" suppressHydrationWarning>
             <motion.span
               variants={item}
               className="inline-flex items-center gap-2 rounded-full border border-blue-400/25 bg-blue-400/[0.07] px-4 py-1.5 text-xs font-semibold tracking-widest text-blue-600 uppercase"
@@ -209,6 +214,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.25, ease: "easeOut" }}
             className="lg:pl-6"
+            suppressHydrationWarning
           >
             <OrbitalHub />
           </motion.div>
@@ -221,6 +227,7 @@ export default function Hero() {
         animate={{ y: reduce ? 0 : [0, 7, 0] }}
         transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
         aria-hidden="true"
+        suppressHydrationWarning
       >
         <span className="text-[10px] font-medium tracking-[0.25em] text-slate-500 uppercase">Scroll</span>
         <ChevronDown className="h-4 w-4 text-slate-500" />
